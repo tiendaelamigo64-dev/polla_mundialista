@@ -4,8 +4,8 @@ from streamlit.web import cli as stcli
 from streamlit_gsheets import GSheetsConnection
 import pandas as pd
 import streamlit as st
-from polla_mundialista.calculo import calcular_puntos_fase
-from polla_mundialista.api import FootballDataFetcher, leer_predicciones_publicas
+from calculo import calcular_puntos_fase
+from api import FootballDataFetcher, leer_predicciones_publicas
 
 if __name__ == '__main__':
     if getattr(sys, 'frozen', False) and not os.environ.get("STREAMLIT_YA_INICIADO"):
